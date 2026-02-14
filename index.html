@@ -102,6 +102,30 @@
             -webkit-text-fill-color: transparent;
         }
 
+/* 注意書きのデザイン */
+        .disclaimer {
+            font-size: 0.8rem;
+            line-height: 1.8;
+            color: #8892b0; /* 少し青みがかったグレー */
+            border: 1px solid rgba(255, 255, 255, 0.1); /* 薄い枠線 */
+            display: inline-block;
+            padding: 20px 40px;
+            border-radius: 2px;
+            background-color: rgba(0, 0, 0, 0.2); /* 背景を少し暗く */
+            margin-top: 20px;
+        }
+
+        .disclaimer strong {
+            color: #e0e0e0;
+            border-bottom: 1px solid #777; /* 「自己責任」の下線 */
+        }
+
+        .small-note {
+            font-size: 0.75rem;
+            opacity: 0.7;
+            margin: 5px 0 15px 0; /* 上下の余白 */
+        }
+
         /* --- ナビゲーションメニュー（目次） --- */
         .category-nav {
             display: flex;
@@ -340,6 +364,12 @@
     <div id="main-content">
         <header>
             <h1>Prompt Archive</h1>
+<div class="disclaimer">
+            <p>✒️ 改変自由・すべて<strong>自己責任</strong>でお楽しみください。</p>
+            <p class="small-note">※動作確認は基本的にGemini 3 Pro。</p>
+            <p>🆗 生成結果（ログ）の公開等は無償公開の範囲でご自由に。</p>
+        </div>
+
             <p style="font-size: 0.9rem; color: var(--text-sub);">AIパートナーとの対話を楽しむためのプロンプト保管庫</p>
             
             <div class="category-nav">
